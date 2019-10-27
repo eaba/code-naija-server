@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Andela Hackathon", "Andela Hackathon\Andela Hackathon.csproj", "{DB56EB74-DC47-48F2-BA4E-DDC717634D7C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeoFullNode", "NeoFullNode\NeoFullNode.csproj", "{E51D20DC-C021-4755-A004-21C232889349}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectorNode", "ProjectorNode\ProjectorNode.csproj", "{B1A1E0D7-6DC6-44B9-ACC3-830D9803F5FA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commands", "Commands\Commands.csproj", "{A6FA78C5-E41F-401D-B1FC-BB931D76467A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecisionContract", "DecisionContract\DecisionContract.csproj", "{82C180B1-5D8F-49B6-8002-EE4F986F9A26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeNaijaReact", "CodeNaijaReact\CodeNaijaReact.csproj", "{B153EBEC-6DAC-4B28-814E-54F38CFE2BB8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB56EB74-DC47-48F2-BA4E-DDC717634D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB56EB74-DC47-48F2-BA4E-DDC717634D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB56EB74-DC47-48F2-BA4E-DDC717634D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB56EB74-DC47-48F2-BA4E-DDC717634D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E51D20DC-C021-4755-A004-21C232889349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E51D20DC-C021-4755-A004-21C232889349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E51D20DC-C021-4755-A004-21C232889349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E51D20DC-C021-4755-A004-21C232889349}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1A1E0D7-6DC6-44B9-ACC3-830D9803F5FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1A1E0D7-6DC6-44B9-ACC3-830D9803F5FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1A1E0D7-6DC6-44B9-ACC3-830D9803F5FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1A1E0D7-6DC6-44B9-ACC3-830D9803F5FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6FA78C5-E41F-401D-B1FC-BB931D76467A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6FA78C5-E41F-401D-B1FC-BB931D76467A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6FA78C5-E41F-401D-B1FC-BB931D76467A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6FA78C5-E41F-401D-B1FC-BB931D76467A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82C180B1-5D8F-49B6-8002-EE4F986F9A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82C180B1-5D8F-49B6-8002-EE4F986F9A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82C180B1-5D8F-49B6-8002-EE4F986F9A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82C180B1-5D8F-49B6-8002-EE4F986F9A26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B153EBEC-6DAC-4B28-814E-54F38CFE2BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B153EBEC-6DAC-4B28-814E-54F38CFE2BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B153EBEC-6DAC-4B28-814E-54F38CFE2BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B153EBEC-6DAC-4B28-814E-54F38CFE2BB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {596EF332-B3C1-41CF-98E2-A48B45FCDF2B}
+	EndGlobalSection
+EndGlobal
