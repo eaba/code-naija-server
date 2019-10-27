@@ -5,14 +5,18 @@
       "Index": "Index_{0}",
       "CertCache": "Certs"
     },
-    "P2P": {
-      "Port": 10333,
-      "WsPort": 10334
+    "RPC": {
+      "BindAddress": "127.0.0.1",
+      "Port": 10332,
+      "SslCert": "",
+      "SslCertPassword": ""
     },
-    "Urls": {
-      "AddressUrl": "https://neoscan.io/address/{0}",
-      "AssetUrl": "https://neoscan.io/api/main_net/v1/get_asset/{0}",
-      "TransactionUrl": "https://neoscan.io/transaction/{0}"
-    }
+    "UnlockWallet": {
+      "Path": "",
+      "Password": "",
+      "StartConsensus": false,
+      "IsActive": false
+    },
+    "PluginURL": "https://github.com/neo-project/neo-plugins/releases/download/v{1}/{0}.zip"
   }
 }

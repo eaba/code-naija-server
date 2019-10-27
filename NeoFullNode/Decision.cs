@@ -9,11 +9,13 @@ using Neo.Network.P2P;
 using Neo.Network.P2P.Payloads;
 using Neo.SmartContract;
 using Neo.VM;
+using Neo.VM.Types;
 using Neo.Wallets;
 using System;
 using System.Buffers;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,8 @@ namespace NeoFullNode
     public class Decision
     {
         private NeoSystem _system;
+        public UInt160 ChangeAddress; //=> ((string)comboBoxChangeAddress.SelectedItem).ToScriptHash();
+        public UInt160 FromAddress;
         public Decision(NeoSystem system)
         {
             _system = system;
@@ -62,7 +66,7 @@ namespace NeoFullNode
                 return (false, null);
             }
         }
-        private (bool, Dictionary<string, string>) OnDeployContract(byte[] script, byte[] parameter_list, ContractParameterType return_type, ContractPropertyState properties, string name, string version, string author, string email, string description)
+        public void OnDeployContract(Fixed8 fee, byte[] script, byte[] parameter_list, ContractParameterType return_type, ContractPropertyState properties, string name, string version, string author, string email, string description)
         {
             try
             {
@@ -75,12 +79,21 @@ namespace NeoFullNode
                         Script = sb.ToArray()
                     };
                 }
+                InvocationTransaction result = Program.Wallet.MakeTransaction(new InvocationTransaction
+                {
+                    Version = tx.Version,
+                    Script = tx.Script,
+                    Gas = tx.Gas,
+                    Attributes = tx.Attributes,
+                    Outputs = tx.Outputs
+                }, change_address: null, fee: fee);
             }
             catch (Exception ex)
             {
-                return (false, null);
+                Console.WriteLine(ex.Message);
             }
         }
+        
         private (bool, Dictionary<string, string>) OnCreateIdentity(Dictionary<string, string> command)
         {
             try
