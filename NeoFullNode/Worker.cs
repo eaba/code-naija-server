@@ -44,7 +44,7 @@ namespace NeoFullNode
                  .Topic("persistent://public/default/smartcontract")
                  .Create();
             _consumer = client.NewConsumer()
-                  .SubscriptionName("DecisionSubscription")
+                  .SubscriptionName("persistent://public/default/decision")
                   .Topic("Decision")
                   .Create();
             while (!stoppingToken.IsCancellationRequested)

@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{82C180B1-5D8F-49B6-8002-EE4F986F9A26}</ProjectGuid>
+    <ProjectGuid>{28028136-9318-4DEF-9509-901EBF867BC6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DecisionContract</RootNamespace>
-    <AssemblyName>DecisionContract</AssemblyName>
+    <RootNamespace>ElectionContract</RootNamespace>
+    <AssemblyName>ElectionContract</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,9 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AWSSDK, Version=2.3.55.2, Culture=neutral, PublicKeyToken=9f476d3089b52be3, processorArchitecture=MSIL">
-      <HintPath>..\packages\AWSSDK.2.3.55.2\lib\net45\AWSSDK.dll</HintPath>
-    </Reference>
     <Reference Include="Neo.SmartContract.Framework, Version=2.9.3.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Neo.SmartContract.Framework.2.9.3\lib\net40\Neo.SmartContract.Framework.dll</HintPath>
       <Private>True</Private>
@@ -49,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Decision.cs" />
+    <Compile Include="Election.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

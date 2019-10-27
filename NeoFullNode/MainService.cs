@@ -6,10 +6,8 @@ using Neo.Wallets;
 using Neo.Wallets.NEP6;
 using Neo.Wallets.SQLite;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Security.Cryptography;
-using System.Text;
 
 namespace NeoFullNode
 {

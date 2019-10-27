@@ -1,25 +1,20 @@
-﻿//using Amazon.EC2.Model;
-using Neo.SmartContract.Framework;
+﻿using Neo.SmartContract.Framework;
 using Neo.SmartContract.Framework.Services.Neo;
+using System;
+using System.Numerics;
 
-namespace DecisionContract
+namespace SmartCountryElection
 {
-    public class Contract1 : SmartContract
+    public class SmartCountryElection : SmartContract
     {
-        
         public static bool Main(string operation, object[] args)
         {
+            //This is good
             StorageMap candidates = Storage.CurrentContext.CreateMap("candidates"); // 'user' prefix
             StorageMap voters = Storage.CurrentContext.CreateMap("voters");
             StorageMap identities = Storage.CurrentContext.CreateMap("identities");
             if (operation == "RequestIdentity")
             {
-                Runtime.Notify(operation, args);
-                return true;
-            }
-            if (operation == "DeleteContract")
-            {
-                Contract.Destroy();
                 Runtime.Notify(operation, args);
                 return true;
             }
